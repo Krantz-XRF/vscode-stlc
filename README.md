@@ -1,65 +1,19 @@
-# simply-typed-lambda-calculus README
+# Simply-Typed Lambda Calculus
 
-This is the README for your extension "simply-typed-lambda-calculus". After writing up a brief description, we recommend including the following sections.
+This is a language extension for simply-typed lambda calculus implemented in *Types and Programming Languages* by Pierce.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+Syntax highlighting in Dark+/Light+ themes.
 
-For example if there is an image subfolder under your extension project workspace:
+### Dark+
 
-\!\[feature X\]\(images/feature-x.png\)
+![dark-plus](screenshots/dark-plus.png)
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+### Light+
 
-## Requirements
+![light-plus](screenshots/light-plus.png)
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+## Feature Request or Bug Report
 
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Please see the [GitHub repository](https://github.com/Krantz-XRF/vscode-stlc).
