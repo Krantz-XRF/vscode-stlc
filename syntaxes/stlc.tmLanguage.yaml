@@ -1,0 +1,46 @@
+$schema: 'https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json'
+name: STLC
+patterns:
+- include: '#keywords'
+- include: '#strings'
+- include: '#block_comments'
+- include: '#operators'
+- include: '#integers'
+- include: '#names'
+repository:
+  keywords:
+    patterns:
+    - name: keyword.control.stlc
+      match: \b(?:lambda|ref|let|in|succ|pred|iszero|if|then|else)\b
+  strings:
+    name: string.quoted.double.stlc
+    begin: '"'
+    end: '"'
+    patterns:
+    - name: constant.character.escape.stlc
+      match: \\.
+  block_comments:
+    name: comment.block.stlc
+    begin: '\/\*'
+    end: '\*\/'
+  operators:
+    name: keyword.operator.stlc
+    match: ->|:=|!
+  integers:
+    name: constant.numeric.stlc
+    match: \b-?[0-9]+\b
+  names:
+    patterns:
+    # vars
+    - name: variable.other.stlc
+      match: \b[a-z][A-Za-z_]*\b
+    # underscore
+    - name: constant.language.stlc
+      match: \b_\b
+    # types
+    - name: entity.name.type.stlc
+      match: \b[A-Z][A-Za-z_]*\b
+    # built-in types
+    - name: support.type.stlc
+      match: \b(?:Bool|Nat|Unit|Top|Bot)\b
+scopeName: source.stlc

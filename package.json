@@ -1,0 +1,37 @@
+{
+    "name": "simply-typed-lambda-calculus",
+    "displayName": "Simply-Typed Lambda Calculus",
+    "description": "Syntax Highlighting for simply-typed lambda calculus",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.45.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "stlc",
+                "aliases": [
+                    "STLC",
+                    "stlc"
+                ],
+                "extensions": [
+                    ".f"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "stlc",
+                "scopeName": "source.stlc",
+                "path": "./syntaxes/stlc.tmLanguage.json"
+            }
+        ]
+    },
+    "devDependencies": {
+        "js-yaml": "^3.13.1"
+    }
+}
