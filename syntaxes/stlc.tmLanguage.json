@@ -57,20 +57,24 @@
     "names": {
       "patterns": [
         {
-          "name": "variable.other.stlc",
-          "match": "\\b[a-z][A-Za-z_]*\\b"
-        },
-        {
           "name": "constant.language.stlc",
           "match": "\\b_\\b"
         },
         {
-          "name": "entity.name.type.stlc",
-          "match": "\\b[A-Z][A-Za-z_]*\\b"
+          "name": "constant.language.stlc",
+          "match": "\\b(?:unit|true|false)\\b"
         },
         {
           "name": "support.type.stlc",
-          "match": "\\b(?:Bool|Nat|Unit|Top|Bot)\\b"
+          "match": "\\b(?:Bool|Nat|Unit|Top|Bot|Ref|Source|Sink)\\b"
+        },
+        {
+          "name": "variable.other.stlc",
+          "match": "\\b[a-z][A-Za-z_]*\\b"
+        },
+        {
+          "name": "entity.name.type.stlc",
+          "match": "\\b[A-Z][A-Za-z_]*\\b"
         }
       ]
     }

@@ -31,16 +31,19 @@ repository:
     match: \b-?[0-9]+\b
   names:
     patterns:
-    # vars
-    - name: variable.other.stlc
-      match: \b[a-z][A-Za-z_]*\b
     # underscore
     - name: constant.language.stlc
       match: \b_\b
+    # built-in constants
+    - name: constant.language.stlc
+      match: \b(?:unit|true|false)\b
+    # built-in types
+    - name: support.type.stlc
+      match: \b(?:Bool|Nat|Unit|Top|Bot|Ref|Source|Sink)\b
+    # vars
+    - name: variable.other.stlc
+      match: \b[a-z][A-Za-z_]*\b
     # types
     - name: entity.name.type.stlc
       match: \b[A-Z][A-Za-z_]*\b
-    # built-in types
-    - name: support.type.stlc
-      match: \b(?:Bool|Nat|Unit|Top|Bot)\b
 scopeName: source.stlc
