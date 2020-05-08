@@ -42,8 +42,8 @@ repository:
       match: \b(?:Bool|Nat|Unit|Top|Bot|Ref|Source|Sink)\b
     # vars
     - name: variable.other.stlc
-      match: \b[a-z][A-Za-z_]*\b
+      match: \b[a-z_][A-Za-z0-9_]*\b
     # types
     - name: entity.name.type.stlc
-      match: \b[A-Z][A-Za-z_]*\b
+      match: \b[A-Z][A-Za-z0-9_]*\b
 scopeName: source.stlc

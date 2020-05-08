@@ -70,11 +70,11 @@
         },
         {
           "name": "variable.other.stlc",
-          "match": "\\b[a-z][A-Za-z_]*\\b"
+          "match": "\\b[a-z_][A-Za-z0-9_]*\\b"
         },
         {
           "name": "entity.name.type.stlc",
-          "match": "\\b[A-Z][A-Za-z_]*\\b"
+          "match": "\\b[A-Z][A-Za-z0-9_]*\\b"
         }
       ]
     }
